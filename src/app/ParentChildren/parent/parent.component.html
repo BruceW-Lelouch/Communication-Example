@@ -1,0 +1,8 @@
+<div class="parent_container">
+	This is Parent Component.
+	<app-children childTitle="Msg to children" (childEmit)="accept($event)" #child_tag></app-children>
+	<button (click)="child_tag.childPrint()">Click to Implement Children Component's Method</button>
+	<button (click)="getInfo()">Get msg from Children</button>
+	<div>{{ childrenSays }}</div>
+	<h2>{{ info }}</h2>
+</div>
