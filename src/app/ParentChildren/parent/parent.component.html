@@ -1,8 +1,16 @@
 <div class="parent_container">
-	This is Parent Component.
-	<app-children childTitle="Msg to children" (childEmit)="accept($event)" #child_tag></app-children>
-	<button (click)="child_tag.childPrint()">Click to Implement Children Component's Method</button>
-	<button (click)="getInfo()">Get msg from Children</button>
+	<h3>This is Parent Component.</h3>
+	<div>
+		Click to Implement Children Component's Method:<button (click)="child_tag.childPrint()">Children Method</button>
+		<div><i>(Give children component a tag and implement the method directly!)</i></div>
+	</div>
+	<div>
+		<code class="code">for i in range(len(ni)</code>
+	</div>
+	
+	<button (click)="getInfo()">Get Data from Children</button>
+	<div><i>(Using Output and Emit!)</i></div>
 	<div>{{ childrenSays }}</div>
 	<h2>{{ info }}</h2>
+	<app-children childTitle="Msg to children from Parent" (childEmit)="accept($event)" #child_tag></app-children>
 </div>

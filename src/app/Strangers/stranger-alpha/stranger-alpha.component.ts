@@ -15,8 +15,8 @@ export class StrangerAlphaComponent implements OnInit {
   ngOnInit() {
   }
 
-  showInfo() {
-  	alert(this.service.info);
+  changeInfo() {
+    this.service.info = this.service.info + 'Add by alpha! '
   }
 
 }
